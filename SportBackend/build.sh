@@ -4,13 +4,11 @@ set -o errexit
 
 # Install dependencies
 pip install -r requirements.txt
+pip install gunicorn
 
 # Create necessary directories
 mkdir -p staticfiles
 mkdir -p media
-
-# Change to the correct directory
-cd SportBackend
 
 # Collect static files
 python manage.py collectstatic --no-input --clear
