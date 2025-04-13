@@ -15,3 +15,5 @@ python manage.py collectstatic --no-input --clear
 
 # Apply migrations
 python manage.py migrate
+
+web: gunicorn wsgi:application --bind 0.0.0.0:$PORT

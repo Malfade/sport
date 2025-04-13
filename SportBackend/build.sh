@@ -10,6 +10,9 @@ pip install gunicorn
 mkdir -p staticfiles
 mkdir -p media
 
+# Change to the correct directory
+cd SportBackend
+
 # Collect static files
 python manage.py collectstatic --no-input --clear
 
