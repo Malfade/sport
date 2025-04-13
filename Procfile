@@ -16,4 +16,4 @@ python manage.py collectstatic --no-input --clear
 # Apply migrations
 python manage.py migrate
 
-web: gunicorn SportBackend.wsgi:application --bind 0.0.0.0:$PORT
+web: cd SportBackend && gunicorn wsgi:application --bind 0.0.0.0:$PORT
