@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-4!@#%$^&*()_+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']  # Для разработки, в продакшене нужно указать конкретные хосты
+ALLOWED_HOSTS = ['kg-sport-tur.onrender.com']  # Для разработки, в продакшене нужно указать конкретные хосты
 
 
 # Application definition
