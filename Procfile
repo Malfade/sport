@@ -1,0 +1,1 @@
+web: gunicorn SportBackend.wsgi:application --log-file - 
