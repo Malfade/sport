@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: kg-sport-tur
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn SportBackend.wsgi:application"
+    envVars:
+      - key: SECRET_KEY
+        value: django-insecure-sport2024kgturkeysecretkey123456789
+      - key: DEBUG
+        value: False
+      - key: ALLOWED_HOSTS
+        value: kg-sport-tur.onrender.com 
