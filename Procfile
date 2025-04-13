@@ -15,6 +15,3 @@ python manage.py collectstatic --no-input --clear
 
 # Apply migrations
 python manage.py migrate
-
-# Create superuser if needed (uncomment if needed)
-# python manage.py createsuperuser --noinput 
